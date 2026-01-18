@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>C Quiz – Chapter 2 (Operators)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="quiz-screen">
+        <div class="title">C Programming Quiz</div>
+        <div class="subtitle">Chapter 2 – Operators & Instructions</div>
+
+        <div class="progress-row">
+          <span id="q-counter">Question 1 of 20</span>
+          <span class="timer" id="timer">Time: 00:00</span>
+          <span id="attempt-info">Not answered yet</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+        </div>
+
+        <div class="question" id="question-text"></div>
+        <div class="options" id="options-container"></div>
+
+        <div class="meta">
+          <span id="level-text">Level: 1</span>
+          <span id="instant-feedback"></span>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn-secondary" id="prev-btn">Previous</button>
+          <button class="btn-secondary" id="next-btn">Next</button>
+          <button class="btn-primary" id="submit-btn">Submit Quiz</button>
+        </div>
+      </div>
+
+      <div id="result-screen" class="hidden">
+        <div class="result-card">
+          <div class="title">Quiz Completed!</div>
+          <div class="stats">
+            <div class="row">
+              <span class="label">Total Questions</span>
+              <span class="value" id="res-total">20</span>
+            </div>
+            <div class="row">
+              <span class="label">Correct</span>
+              <span class="value correct" id="res-correct">0</span>
+            </div>
+            <div class="row">
+              <span class="label">Incorrect</span>
+              <span class="value incorrect" id="res-incorrect">0</span>
+            </div>
+            <div class="row">
+              <span class="label">Accuracy</span>
+              <span class="value" id="res-percent">0%</span>
+            </div>
+            <div class="row">
+              <span class="label">Time Taken</span>
+              <span class="value" id="res-time">00:00</span>
+            </div>
+          </div>
+
+          <div id="review-section">
+            <h3 style="font-size: 16px; color: #9ca3af; margin-bottom: 8px">
+              Review Mistakes:
+            </h3>
+            <div class="review-container" id="review-container"></div>
+          </div>
+
+          <button
+            class="btn-primary"
+            style="width: 100%; margin-top: 20px"
+            onclick="location.reload()"
+          >
+            Try Again
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
